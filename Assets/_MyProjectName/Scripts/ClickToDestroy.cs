@@ -14,7 +14,7 @@ public class ClickToDestroy : MonoBehaviour
                 if (Physics.Raycast(ray, out RaycastHit hit))
                 {
 
-                    if (hit.collider.TryGetComponent(out HitTarget hitTarget))
+                    /*if (hit.collider.TryGetComponent(out HitTarget hitTarget))
                     {
                         hitTarget.TakeHit();
 
@@ -23,6 +23,14 @@ public class ClickToDestroy : MonoBehaviour
                     if (hit.collider.TryGetComponent(out Health health))
                     {
                         health.TakeDamage(testDamage);
+
+                    }*/
+
+                    if (hit.collider.TryGetComponent(out BaseEnemy enemy))
+                    {
+                        enemy.gameObject.GetComponent<Health>().TakeDamage(testDamage);
+                        enemy.gameObject.GetComponent<HitTarget>().TakeHit();
+
 
                     }
                 }
