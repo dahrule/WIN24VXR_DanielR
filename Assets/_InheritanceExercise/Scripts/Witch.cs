@@ -5,8 +5,8 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-/// <summary>
-/// Witch teleports randomly between a boundary and shoots proyectiles to player.
+/// <summary> 
+/// Witch randomly teleports  between a boundary and shoots proyectiles towards player.
 /// </summary>
 public class Witch : BaseEnemy
 {

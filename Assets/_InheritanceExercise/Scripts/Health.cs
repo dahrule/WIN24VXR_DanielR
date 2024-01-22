@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
      BaseEnemy enemy; //TODO: Remove circular dependency later
      HitTarget hitTarget; //TODO: Remove circular dependency later
 
-    private void Awake()
+    void Awake()
     {
         enemy = gameObject.GetComponent<BaseEnemy>();
         hitTarget = gameObject.GetComponent<HitTarget>();
@@ -34,17 +34,15 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
     }
 
-    public bool IsAlive()
-    {
-        return currentHealth > 0;
-    }
-
     private void Die()
     {
-        enemy.DisableColliderPhysics();//TODO: Remove circular dependency late
-        hitTarget.GainDestroyScore(); //TODO: Remove circular dependency late
+        if(enemy!=null && hitTarget!=null)
+        {
+            enemy.DisableColliderGravity();//TODO: Remove circular dependency late
+            hitTarget.GainDestroyScore(); //TODO: Remove circular dependency late
 
-        enemy.Destroy(); //TODO: Remove circular dependency late
+            enemy.Destroy(); //TODO: Remove circular dependency late
+        }
         
         Destroy(gameObject,1f);
     }

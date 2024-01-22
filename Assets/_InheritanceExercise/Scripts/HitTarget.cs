@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 
 
-public class HitTarget : MonoBehaviour
+public class HitTarget : MonoBehaviour, IHittable
 {
     [SerializeField] int hitScoreValue = 1;
     [SerializeField] int destroyScoreValue = 5;
@@ -31,7 +31,7 @@ public class HitTarget : MonoBehaviour
     }
 
 
-    public int CalculateHitScore()
+    private int CalculateHitScore()
     {
         return hitScoreValue;
     }

@@ -28,8 +28,7 @@ public class ClickToDestroy : MonoBehaviour
 
                     if (hit.collider.TryGetComponent(out BaseEnemy enemy))
                     {
-                        enemy.gameObject.GetComponent<Health>().TakeDamage(testDamage);
-                        enemy.gameObject.GetComponent<HitTarget>().TakeHit();
+                        enemy.TakeHit();
 
 
                     }

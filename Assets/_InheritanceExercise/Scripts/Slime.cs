@@ -10,6 +10,8 @@ public class Slime : BaseEnemy
     /// </summary>
     protected override void Move()
     {
+        if (playerTarget == null) return;
+
         // Move our position a step closer to the target.
         var step = moveSpeed * Time.deltaTime; // calculate distance to move
         transform.position = Vector3.MoveTowards(transform.position, playerTarget.position, step);

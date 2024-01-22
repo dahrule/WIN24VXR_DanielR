@@ -579,6 +579,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1731298970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1406310469446947788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8097613656803671094, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_Name
+      value: HitTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2397804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.778467
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370837617127509772, guid: eb5eb78a8100db04f9b3c9495d0a3023,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb5eb78a8100db04f9b3c9495d0a3023, type: 3}
 --- !u!1001 &4352787741277886023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -587,6 +655,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2512096080651753598, guid: 5ce29346173014d4d915fb4f4d85e8e0,
+        type: 3}
+      propertyPath: m_text
+      value: Destroy Gain Score
+      objectReference: {fileID: 0}
     - target: {fileID: 2524049374143594972, guid: 5ce29346173014d4d915fb4f4d85e8e0,
         type: 3}
       propertyPath: hitScoreValue
@@ -647,10 +720,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4226648631656742974, guid: 5ce29346173014d4d915fb4f4d85e8e0,
+        type: 3}
+      propertyPath: m_text
+      value: 'Hit Gain Score
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 4593249286199505205, guid: 5ce29346173014d4d915fb4f4d85e8e0,
         type: 3}
       propertyPath: m_Name
       value: SuperSlime(Enemy)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593249286199505205, guid: 5ce29346173014d4d915fb4f4d85e8e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -665,15 +750,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2268602020023756993, guid: 70e3e4d598206d048832f8898c2a5c83,
+        type: 3}
+      propertyPath: m_text
+      value: 'Hit Gain Score
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 5071522781517561410, guid: 70e3e4d598206d048832f8898c2a5c83,
         type: 3}
       propertyPath: playerTarget
       value: 
       objectReference: {fileID: 1299801196}
+    - target: {fileID: 7566903374700657067, guid: 70e3e4d598206d048832f8898c2a5c83,
+        type: 3}
+      propertyPath: m_text
+      value: 'Destroy Gain Score
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 7701232421264262044, guid: 70e3e4d598206d048832f8898c2a5c83,
         type: 3}
       propertyPath: m_Name
       value: Slime(Enemy)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701232421264262044, guid: 70e3e4d598206d048832f8898c2a5c83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9127193028743823993, guid: 70e3e4d598206d048832f8898c2a5c83,
         type: 3}
@@ -738,6 +842,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4316293271604486362, guid: fd169824351c95347a1cf461e89714a0,
+        type: 3}
+      propertyPath: m_text
+      value: Destroy Gain Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485353441925018664, guid: fd169824351c95347a1cf461e89714a0,
+        type: 3}
+      propertyPath: m_text
+      value: 'Hit Gain Score
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 7590795309556246746, guid: fd169824351c95347a1cf461e89714a0,
         type: 3}
       propertyPath: m_Name
@@ -809,3 +925,4 @@ SceneRoots:
   - {fileID: 5086076761173974043}
   - {fileID: 4352787741277886023}
   - {fileID: 7861994549014138455}
+  - {fileID: 1406310469446947788}

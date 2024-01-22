@@ -14,7 +14,7 @@ public abstract class BaseEnemy : MonoBehaviour
 
     [SerializeField] protected float moveSpeed = 1f;
     [SerializeField] protected int attackDamage = 10;
-    [SerializeField] protected int secondsBetweenAttacks = 3;
+    [SerializeField] protected float secondsBetweenAttacks = 3;
 
 
 
@@ -38,10 +38,16 @@ public abstract class BaseEnemy : MonoBehaviour
     protected abstract void Attack();
     public abstract void Destroy();
 
-    public void DisableColliderPhysics()
+    public void DisableColliderGravity()
     {
         this.gameObject.GetComponent<Collider>().enabled = false;
         this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+    }
+
+    public void TakeHit()
+    {
+        hitTarget.TakeHit();
+        health.TakeDamage(attackDamage);
     }
 
 }
