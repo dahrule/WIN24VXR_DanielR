@@ -44,7 +44,7 @@ public abstract class BaseEnemy : MonoBehaviour
         this.gameObject.GetComponent<Rigidbody>().useGravity = false;
     }
 
-    public void TakeHit()
+    public virtual void TakeHit()
     {
         hitTarget.TakeHit();
         health.TakeDamage(attackDamage);
