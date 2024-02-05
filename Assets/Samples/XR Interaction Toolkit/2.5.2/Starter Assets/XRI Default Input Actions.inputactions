@@ -2705,6 +2705,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "RightAngularVelocity",
+                    "type": "Value",
+                    "id": "d6db6d86-8eef-40ca-aadc-a7ccf93a7502",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "LeftVelocity",
                     "type": "Value",
                     "id": "5f6a7f66-6fc2-4261-a6ac-4734bbb086bd",
@@ -2734,6 +2743,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "LeftVelocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ba42b27-fde2-4199-b01f-d61810444dcc",
+                    "path": "<XRController>{RightHand}/{DeviceAngularVelocity}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightAngularVelocity",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
