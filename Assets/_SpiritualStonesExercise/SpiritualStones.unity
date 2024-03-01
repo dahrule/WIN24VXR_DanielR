@@ -288,7 +288,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 197933307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f03d478093c5146489347f735b5fc397, type: 3}
+  m_Script: {fileID: 11500000, guid: b957f3eed0d9f6b458cd33d0bad78be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   openDoor: {fileID: 2066809664}
@@ -811,7 +811,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 670465610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a17dd3c8a00b58049b200e4e66512eaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 51b326be1b36b174fa26d8d77632584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stoneReference: {fileID: 1000068499}
@@ -1423,7 +1423,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185167222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a17dd3c8a00b58049b200e4e66512eaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 51b326be1b36b174fa26d8d77632584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stoneReference: {fileID: 1618175912}
@@ -2450,7 +2450,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1987636931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a17dd3c8a00b58049b200e4e66512eaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 51b326be1b36b174fa26d8d77632584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stoneReference: {fileID: 1977867542}
