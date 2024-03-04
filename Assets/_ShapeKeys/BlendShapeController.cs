@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BlendShapeController : MonoBehaviour
 {
-    [SerializeField] float blendSpeed =1f; // Adjust the speed as needed
+    [SerializeField] float blendSpeed =2f; // Adjust the speed as needed
     [SerializeField] SkinnedMeshRenderer meshRenderer;
     private float blendValue = 0f;
 
