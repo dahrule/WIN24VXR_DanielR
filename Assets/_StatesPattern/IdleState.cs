@@ -7,24 +7,20 @@ public class IdleState : BaseState
     public override void Enter(StateManager stateManager)
     {
         Debug.Log("Enter IdleState");
+
         //Change cube color
-        stateManager.meshrenderer.material.color = stateManager.idleColor;
+        stateManager.MeshRenderer.material.color = stateManager.idleColor;
     }
 
     public override void Tick(StateManager stateManager)
     {
         Debug.Log("I am in Idle State");
 
-        //Check distance between player and cube
-        float distanceToPlayer = Vector3.Distance(stateManager.gameObject.transform.position,stateManager.player.position);
-        if(distanceToPlayer<=stateManager.alertRadiusThreshold)
+        //Alert State Transition
+        if (stateManager.ProjectedDistanceToPlayer()<=stateManager.alertRadiusThreshold)
         {
-            //Go to Alert State
-            stateManager.SwitchState(stateManager.alertstate);
+            stateManager.SwitchState(stateManager.alertState);
         }
-
-
-
     }
 
     public override void OnCollisionEnter(StateManager stateManager)
@@ -32,5 +28,4 @@ public class IdleState : BaseState
         throw new System.NotImplementedException();
     }
 
-    
 }
